@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+        <link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		
+			
+			
+      <table cellspacing="0" cellpadding="0">
+		  <tr>
+			  <td  style="background-color: white;"  colspan="3"> <input type="text" id="one"></td>
+			  <td style="background-color: rgba(20, 224, 156, 0.807)"><input type="button" value="AC" id="two" onclick="calci()" ></td>
+			  </tr>
+
+              <tr>
+                <td   ><input type="button" value="9" id="com" onclick="numbers('9')"></td>
+                <td><input type="button" value="8" id="com" onclick="numbers('8')"></td>
+                <td><input type="button" value="7" id="com" onclick="numbers(7)"></td>
+                <td class="side" ><input type="button" value="+"  id="cell"  onclick="numbers('+')"></td>
+      
+     
+                </tr>
+
+
+				  <tr>
+					  <td><input type="button" value="4" id="com" onclick="numbers('4')"></td>
+				<td><input type="button" value="5" id="com" onclick="numbers('5')"></td>
+				<td><input type="button" value="6" id="com" onclick="numbers('6')"></td>
+				<td  class="side" ><input type="button" value="-" id="cell" onclick="numbers('-')"></td>
+
+					  </tr>
+
+				
+                      <tr>
+                        <td><input type="button" value="1" id="com" onclick="numbers('1')"></td>
+                        <td><input type="button" value="2" id="com" onclick="numbers('2')"></td>
+                        <td><input type="button" value="3" id="com" onclick="numbers('3')"></td>
+                        <td  class="side" ><input type="button" value="/" id="cell" class="side" onclick="numbers('/')"></td>
+                          </tr>      
+
+						  <tr>
+                            <td><input type="button" value="." id="com" onclick="numbers('.')"></td>
+							  <td><input type="button" value="0" id="com"  class="side" onclick="numbers(0)"></td>
+				
+				<td><input type="button" value="=" id="com" onclick="calculate()"></td>
+				<td  class="side" ><input type="button" value="*" id="cell" onclick="numbers('*')"></td>
+							  </tr>
+
+
+
+
+	  </table>
+         
+<script>
+	function calci()
+	{
+		document.getElementById('one').value=""
+	}
+
+	function numbers(value)
+	{
+		document.getElementById('one').value+=value
+	}
+    function calculate()
+	{
+	  var a=document.getElementById('one').value
+	  var b=eval(a)
+      document.getElementById('one').value=b;
+	}
+	
+	</script>
+
+    <!--
+        <script>
+		var a=Number(prompt("PRESS 1 FOR START PRESS 2 FOR EXIT"))
+		if(a==1)
+		{
+			alert("WELOCME TO THE CALCULATOR WORLD")
+		}
+		else
+		{
+			alert("COME WHEN U NEED")
+		}
+		</script>
+    -->
+	
+
+
+
+
+
+
+
+
+	
+		
+	</body>
+</html>
